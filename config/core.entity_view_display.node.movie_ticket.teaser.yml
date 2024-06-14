@@ -1,0 +1,41 @@
+uuid: 69a4106a-bcf8-4b9f-83e2-2f866307c8e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie_ticket.body
+    - field.field.node.movie_ticket.field_description
+    - field.field.node.movie_ticket.field_image2
+    - field.field.node.movie_ticket.field_private_file
+    - field.field.node.movie_ticket.field_release_year
+    - field.field.node.movie_ticket.field_title
+    - field.field.node.movie_ticket.field_url
+    - field.field.node.movie_ticket.layout_builder__layout
+    - node.type.movie_ticket
+  module:
+    - text
+    - user
+id: node.movie_ticket.teaser
+targetEntityType: node
+bundle: movie_ticket
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_description: true
+  field_image2: true
+  field_private_file: true
+  field_release_year: true
+  field_title: true
+  field_url: true
+  langcode: true
+  layout_builder__layout: true
+  links: true

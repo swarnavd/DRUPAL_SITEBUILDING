@@ -1,0 +1,18 @@
+uuid: b9ee3327-1c6d-4a94-ac6c-fedba3978033
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Movie Blog'
+type: movie_ticket
+description: 'Books different type of movies'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

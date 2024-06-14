@@ -1,0 +1,11 @@
+uuid: 4213da6f-52f9-4170-a12d-81e7fa8d3795
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.register_novelist
+label: 'Register Novelist'
+description: 'registration form for novelist'
+targetEntityType: user
+cache: true

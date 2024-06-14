@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 9f3fd952-4cf8-42cb-a945-66100e589126
+name: drupaltestedit
+mail: swarnav.das@innoraft.com
+slogan: 'Strive for progress not perfection.'
+page:
+  403: /node/4
+  404: /node/3
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: itsswarnav007@gmail.com

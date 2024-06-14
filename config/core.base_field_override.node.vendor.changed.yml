@@ -1,0 +1,18 @@
+uuid: 2e3a5b4d-64d3-451a-b410-8c1ef4e2e65d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vendor
+id: node.vendor.changed
+field_name: changed
+entity_type: node
+bundle: vendor
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

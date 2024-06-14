@@ -1,0 +1,52 @@
+uuid: c237f719-d807-43a9-9a23-f69f0a643091
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register_novelist
+    - field.field.user.user.field_department
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_middle_name
+    - field.field.user.user.user_picture
+  module:
+    - path
+    - user
+_core:
+  default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
+id: user.user.register_novelist
+targetEntityType: user
+bundle: user
+mode: register_novelist
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_department: true
+  field_last_name: true
+  field_middle_name: true
+  langcode: true
+  user_picture: true

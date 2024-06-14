@@ -1,0 +1,32 @@
+uuid: 78b6651d-4c4d-46f9-8840-4c39b364dbee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.test2
+    - field.field.node.news_article.body
+    - field.field.node.news_article.field_article_type
+    - node.type.news_article
+  module:
+    - text
+    - user
+id: node.news_article.test2
+targetEntityType: node
+bundle: news_article
+mode: test2
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_article_type: true
+  langcode: true

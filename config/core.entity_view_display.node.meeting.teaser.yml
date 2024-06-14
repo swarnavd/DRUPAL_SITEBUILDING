@@ -1,0 +1,33 @@
+uuid: 8819785e-917a-4b87-9b90-5ab20d735b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.meeting.field_description
+    - field.field.node.meeting.field_meeting_agenda
+    - field.field.node.meeting.field_meeting_date
+    - field.field.node.meeting.field_meeting_link
+    - field.field.node.meeting.field_meeting_location
+    - field.field.node.meeting.field_meeting_type
+    - node.type.meeting
+  module:
+    - user
+id: node.meeting.teaser
+targetEntityType: node
+bundle: meeting
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_meeting_agenda: true
+  field_meeting_date: true
+  field_meeting_link: true
+  field_meeting_location: true
+  field_meeting_type: true
+  langcode: true

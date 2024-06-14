@@ -1,0 +1,24 @@
+uuid: 91684350-b890-4549-93a9-bf4f2dfc0e03
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_650x650
+    - image.style.thumbnail
+  theme:
+    - seven
+id: article_responsive
+label: 'Article responsive'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+    breakpoint_id: seven.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: seven.mobile
+    multiplier: 1x
+breakpoint_group: seven
+fallback_image_style: max_650x650

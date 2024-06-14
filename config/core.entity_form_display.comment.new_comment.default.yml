@@ -1,0 +1,32 @@
+uuid: a9a24010-be67-4e23-80ca-e44f7522857a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.new_comment
+    - field.field.comment.new_comment.comment_body
+  module:
+    - text
+id: comment.new_comment.default
+targetEntityType: comment
+bundle: new_comment
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  author: true
+  subject: true

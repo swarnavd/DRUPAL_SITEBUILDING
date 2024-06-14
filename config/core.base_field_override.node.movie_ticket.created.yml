@@ -1,0 +1,18 @@
+uuid: 211039a0-7330-4784-8852-294b80039a1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_ticket
+id: node.movie_ticket.created
+field_name: created
+entity_type: node
+bundle: movie_ticket
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

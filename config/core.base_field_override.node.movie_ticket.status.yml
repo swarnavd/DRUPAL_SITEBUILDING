@@ -1,0 +1,22 @@
+uuid: be9ecb51-8276-47af-8113-555829466006
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_ticket
+id: node.movie_ticket.status
+field_name: status
+entity_type: node
+bundle: movie_ticket
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

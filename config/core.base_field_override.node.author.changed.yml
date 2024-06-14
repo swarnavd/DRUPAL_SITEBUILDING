@@ -1,0 +1,18 @@
+uuid: f7fbf565-b380-4e26-b825-64b247de6f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.author
+id: node.author.changed
+field_name: changed
+entity_type: node
+bundle: author
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

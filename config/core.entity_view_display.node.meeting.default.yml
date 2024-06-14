@@ -1,0 +1,80 @@
+uuid: c3047802-6da1-4b7a-ba1b-6e9eba0de14f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.meeting.field_description
+    - field.field.node.meeting.field_meeting_agenda
+    - field.field.node.meeting.field_meeting_date
+    - field.field.node.meeting.field_meeting_link
+    - field.field.node.meeting.field_meeting_location
+    - field.field.node.meeting.field_meeting_type
+    - node.type.meeting
+  module:
+    - datetime
+    - link
+    - options
+    - text
+    - user
+id: node.meeting.default
+targetEntityType: node
+bundle: meeting
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_meeting_agenda:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_meeting_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_meeting_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_meeting_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_meeting_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

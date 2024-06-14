@@ -1,0 +1,19 @@
+uuid: c4adf924-f1ed-4780-b8f9-c89177267a6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.movie_ticket
+id: node.movie_ticket.field_description
+field_name: field_description
+entity_type: node
+bundle: movie_ticket
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

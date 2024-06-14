@@ -1,0 +1,25 @@
+uuid: fd253459-ac18-456c-9861-ddb8f0fe76ba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_block:328d97b1-7343-408e-9888-356bb575b597'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_pageblock_2
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:328d97b1-7343-408e-9888-356bb575b597'
+settings:
+  id: 'block_content:328d97b1-7343-408e-9888-356bb575b597'
+  label: 'Page block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

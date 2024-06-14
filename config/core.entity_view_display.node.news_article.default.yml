@@ -1,0 +1,90 @@
+uuid: b0220db4-f9f0-47f9-833a-56f488d7ca13
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.news_article.title
+    - field.field.node.news_article.body
+    - field.field.node.news_article.field_article_type
+    - node.type.news_article
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'main section'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          1135cbfc-a577-4297-9b55-7a191e197efd:
+            uuid: 1135cbfc-a577-4297-9b55-7a191e197efd
+            region: first
+            configuration:
+              id: 'field_block:node:news_article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          36ce8f7a-de49-4006-ab57-e42829b77f03:
+            uuid: 36ce8f7a-de49-4006-ab57-e42829b77f03
+            region: second
+            configuration:
+              id: 'field_block:node:news_article:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.news_article.default
+targetEntityType: node
+bundle: news_article
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_article_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: fdfcbec7-584f-464c-a483-775b071207d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_ticket
+  module:
+    - path
+id: node.movie_ticket.path
+field_name: path
+entity_type: node
+bundle: movie_ticket
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

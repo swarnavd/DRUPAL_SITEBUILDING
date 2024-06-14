@@ -1,0 +1,30 @@
+uuid: 0bd2e791-0331-410f-95ff-273ef475e23f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_ct_taxonomy
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__news_ct_taxonomy_block_1_2
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_ct_taxonomy-block_1'
+settings:
+  id: 'views_block:news_ct_taxonomy-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/taxonomy/term/*\r\n/node/*"

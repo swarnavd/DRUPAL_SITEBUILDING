@@ -1,0 +1,44 @@
+uuid: e9429c9f-a49a-4d09-8729-385e870588e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+    - workflows.workflow.editorial
+  module:
+    - admin_toolbar_search
+    - comment
+    - content_moderation
+    - field_ui
+    - node
+    - system
+id: content_publisher
+label: 'Content Publisher'
+weight: 4
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'administer display modes'
+  - 'administer menu'
+  - 'administer node display'
+  - 'administer node form display'
+  - 'create article content'
+  - 'create page content'
+  - 'delete any article content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'edit any article content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'post comments'
+  - 'revert article revisions'
+  - 'use admin toolbar search'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'view any unpublished content'
+  - 'view article revisions'
+  - 'view latest version'

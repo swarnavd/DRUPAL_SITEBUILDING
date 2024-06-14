@@ -1,0 +1,11 @@
+uuid: 12f1d1e2-172d-469f-9ae7-cd50bc01ac0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.new_register
+label: 'new register'
+description: ''
+targetEntityType: user
+cache: true

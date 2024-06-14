@@ -1,0 +1,38 @@
+uuid: acc4e1e5-ec79-413c-b0b0-cc73e71072af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.author.field_author_name
+    - field.field.node.author.field_country
+    - node.type.author
+  module:
+    - user
+id: node.author.default
+targetEntityType: node
+bundle: author
+mode: default
+content:
+  field_author_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_country:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
