@@ -1,0 +1,21 @@
+uuid: 7bb336e7-0bbf-4705-acd0-4cf878af8fb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_type
+    - node.type.meeting
+  module:
+    - options
+id: node.meeting.field_meeting_type
+field_name: field_meeting_type
+entity_type: node
+bundle: meeting
+label: 'Meeting type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

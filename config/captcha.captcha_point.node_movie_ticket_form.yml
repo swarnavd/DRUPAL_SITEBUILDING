@@ -1,0 +1,7 @@
+uuid: 402e35b4-e6ea-4e46-b6c3-deb4fc93d4a4
+langcode: en
+status: false
+dependencies: {  }
+formId: node_movie_ticket_form
+captchaType: default
+label: node_movie_ticket_form

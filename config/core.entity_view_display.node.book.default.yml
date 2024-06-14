@@ -1,0 +1,48 @@
+uuid: 599503d8-d0b4-4d59-baee-0d1f0d382bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.book.field_author
+    - field.field.node.book.field_book_name
+    - field.field.node.book.field_published_year
+    - node.type.book
+  module:
+    - user
+id: node.book.default
+targetEntityType: node
+bundle: book
+mode: default
+content:
+  field_author:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_book_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_published_year:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

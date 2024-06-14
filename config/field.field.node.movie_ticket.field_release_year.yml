@@ -1,0 +1,21 @@
+uuid: 06f698a0-dae2-45a7-a2a6-c1c21c4215a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_year
+    - node.type.movie_ticket
+  module:
+    - datetime
+id: node.movie_ticket.field_release_year
+field_name: field_release_year
+entity_type: node
+bundle: movie_ticket
+label: Release-year
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

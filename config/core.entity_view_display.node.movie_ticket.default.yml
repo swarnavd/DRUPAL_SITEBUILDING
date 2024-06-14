@@ -1,0 +1,202 @@
+uuid: f9f9794c-6a87-434a-83c7-fc2f89ca8b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.movie_ticket.title
+    - field.field.node.movie_ticket.body
+    - field.field.node.movie_ticket.field_description
+    - field.field.node.movie_ticket.field_image2
+    - field.field.node.movie_ticket.field_private_file
+    - field.field.node.movie_ticket.field_release_year
+    - field.field.node.movie_ticket.field_title
+    - field.field.node.movie_ticket.field_url
+    - field.field.node.movie_ticket.layout_builder__layout
+    - node.type.movie_ticket
+  module:
+    - datetime
+    - file
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: main
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          2e897c70-07a3-435c-b842-b3526c3004f9:
+            uuid: 2e897c70-07a3-435c-b842-b3526c3004f9
+            region: first
+            configuration:
+              id: 'field_block:node:movie_ticket:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          6cacdc57-755f-4044-8ffa-56ccd3bef1d6:
+            uuid: 6cacdc57-755f-4044-8ffa-56ccd3bef1d6
+            region: first
+            configuration:
+              id: 'field_block:node:movie_ticket:field_title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          79261269-5593-4681-bf34-f312262a83fc:
+            uuid: 79261269-5593-4681-bf34-f312262a83fc
+            region: first
+            configuration:
+              id: 'field_block:node:movie_ticket:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          87668c99-e3ba-49f0-aa1a-1fbe6370b867:
+            uuid: 87668c99-e3ba-49f0-aa1a-1fbe6370b867
+            region: second
+            configuration:
+              id: 'field_block:node:movie_ticket:field_image2'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: content
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0c316f4f-3fbf-4e77-bb46-a56005f4dd42:
+            uuid: 0c316f4f-3fbf-4e77-bb46-a56005f4dd42
+            region: second
+            configuration:
+              id: 'field_block:node:movie_ticket:field_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie_ticket.default
+targetEntityType: node
+bundle: movie_ticket
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image2:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_private_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_release_year:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_url:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

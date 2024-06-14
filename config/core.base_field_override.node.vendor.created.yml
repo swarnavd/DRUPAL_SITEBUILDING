@@ -1,0 +1,18 @@
+uuid: 7d0d4ba4-b8bc-46f3-b1a3-ad14f5d59ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vendor
+id: node.vendor.created
+field_name: created
+entity_type: node
+bundle: vendor
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

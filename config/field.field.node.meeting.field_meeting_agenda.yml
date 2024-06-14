@@ -1,0 +1,24 @@
+uuid: 65e66e2f-9c0e-4875-afbe-0de84e9fc3da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meeting_agenda
+    - filter.format.full_html
+    - node.type.meeting
+  module:
+    - text
+id: node.meeting.field_meeting_agenda
+field_name: field_meeting_agenda
+entity_type: node
+bundle: meeting
+label: 'Meeting agenda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text

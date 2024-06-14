@@ -1,0 +1,8 @@
+uuid: 25bf4692-2fed-4266-b8b3-d6157212036e
+langcode: en
+status: true
+dependencies: {  }
+name: Article
+vid: blogs
+description: ''
+weight: 0

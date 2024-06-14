@@ -1,0 +1,24 @@
+uuid: 204c5399-4d64-4646-a359-f5a25bd6a41b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.new_comment
+    - field.field.comment.new_comment.comment_body
+  module:
+    - text
+id: comment.new_comment.default
+targetEntityType: comment
+bundle: new_comment
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

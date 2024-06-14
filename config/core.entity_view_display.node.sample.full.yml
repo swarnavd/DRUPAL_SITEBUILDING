@@ -1,0 +1,62 @@
+uuid: b31780c3-66a8-46b6-a2b8-fdf93ec7a6bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.sample.body
+    - field.field.node.sample.field_desc
+    - field.field.node.sample.field_image3
+    - field.field.node.sample.field_price
+    - field.field.node.sample.field_related_article
+    - node.type.sample
+  module:
+    - image
+    - text
+    - user
+id: node.sample.full
+targetEntityType: node
+bundle: sample
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_desc:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image3:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_related_article:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_price: true
+  langcode: true

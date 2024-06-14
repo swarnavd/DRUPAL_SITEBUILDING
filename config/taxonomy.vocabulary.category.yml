@@ -1,0 +1,8 @@
+uuid: a5d21b2b-c968-4999-8481-c6853f4d4819
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Contains all types of news category'
+weight: 0

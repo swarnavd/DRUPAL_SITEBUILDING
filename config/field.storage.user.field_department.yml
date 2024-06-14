@@ -1,0 +1,33 @@
+uuid: cdb212c2-19ea-4cd1-9493-5c0bb68fd766
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_department
+field_name: field_department
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: it
+      label: IT
+    -
+      value: hr
+      label: HR
+    -
+      value: management
+      label: Management
+    -
+      value: accounts
+      label: Accounts
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

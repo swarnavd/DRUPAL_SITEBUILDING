@@ -1,0 +1,20 @@
+uuid: c7b6e491-1f1a-46b1-ad65-e2a2513866ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vendor
+id: node.vendor.menu_link
+field_name: menu_link
+entity_type: node
+bundle: vendor
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

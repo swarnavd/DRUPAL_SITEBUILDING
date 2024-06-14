@@ -1,0 +1,18 @@
+uuid: e7723d33-370a-4779-850f-e04fe1bc9035
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_ticket
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.movie_ticket
+target_entity_type_id: node
+target_bundle: movie_ticket
+default_langcode: site_default
+language_alterable: true

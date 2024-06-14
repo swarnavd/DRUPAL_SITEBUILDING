@@ -1,0 +1,27 @@
+uuid: 4748e42d-a75f-4a5a-ab13-784e86a785f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_private_file
+    - node.type.movie_ticket
+  module:
+    - file
+id: node.movie_ticket.field_private_file
+field_name: field_private_file
+entity_type: node
+bundle: movie_ticket
+label: 'Private file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt png jpeg jpg webp'
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,10 @@
+uuid: fb7d9dc5-5022-46fb-978d-39d3178323e1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Main navigation'
+description: 'Add content'
+locked: true

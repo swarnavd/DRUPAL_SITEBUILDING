@@ -1,0 +1,20 @@
+uuid: 08781b21-eb07-456d-8907-c930314af28d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_ticket
+id: node.movie_ticket.uid
+field_name: uid
+entity_type: node
+bundle: movie_ticket
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 59b61742-d372-4caa-b1fe-2857d670bfa2
+langcode: en
+status: true
+dependencies: {  }
+id: page_block
+label: 'Page block'
+revision: 0
+description: 'This is my page block which is given in ticket'

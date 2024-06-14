@@ -1,0 +1,25 @@
+uuid: 1566864b-4568-4df8-bd3e-96fc78ae7c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.contact-us
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_contactus
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:contact-us'
+settings:
+  id: 'system_menu_block:contact-us'
+  label: 'Contact Us'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: 69abc31b-71ca-4f83-b8b1-2bfbbadc468f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'News Article 2'
+type: news_article_2
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

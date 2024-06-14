@@ -1,0 +1,42 @@
+uuid: 76246dcc-e36b-44a3-aa29-0d43c7caa7f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.testview
+    - field.field.node.article.body
+    - field.field.node.article.field_article
+    - field.field.node.article.field_body_text
+    - field.field.node.article.field_comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
+id: node.article.testview
+targetEntityType: node
+bundle: article
+mode: testview
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_article: true
+  field_body_text: true
+  field_comment: true
+  field_tags: true
+  langcode: true
+  links: true
